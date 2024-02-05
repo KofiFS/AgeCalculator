@@ -67,10 +67,11 @@ class MainActivity : AppCompatActivity() {
 
                     val dateOfBirth: Date = dateFormat.parse(birthDateString)
 
-                            birthday.setText("Your birthday is "+ dateOfBirth.toString().replace("EST", "").replace("00", "").replace(":", ""))
-                            Toast.makeText(
-                        this, "Hi " + firstname.editableText.toString() + "! " +
-                                "" + lastname.editableText.toString() + ",\nYour age is " + (currentTime - time.weekYear) + " years old!",
+                           // birthday.setText("Your birthday is "+ dateOfBirth.toString().replace("EST", "").replace("00", "").replace(":", ""))
+                           // Add to activity_main for birthday = Enter your birthday below!
+                    Toast.makeText(
+                        this, "Hi! " + firstname.editableText.toString() + " " +
+                                lastname.editableText.toString() + " your age is " + (currentTime - time.weekYear) + " years old which is pretty cool.",
                         Toast.LENGTH_LONG
                     ).show();
 
